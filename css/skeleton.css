@@ -10,6 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- --MY ADDITIONS for St. Andrew's website--
 - Grid
 - Base Styles
 - Typography
@@ -24,6 +25,30 @@
 - Clearing
 - Media Queries
 */
+
+/* MY ADDITIONS for St. Andrew's website
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Shortcuts:
+#testing (from when creating website, delete these)
+*/
+
+/* Basic element customisations - body, font faces, paragraph layout etc */
+
+body {
+  background-color: green; /* basic colour for layout #testing */
+}
+
+/* Classes and IDs - customisations for individual elements/groups of elements */
+
+#header-title {
+  margin-bottom: 0; /* removes margin that skeleton.css adds to h1; this allows
+  other elements to be flush against it */
+}
+
+.dye { /* for #testing layout pieces, added after column type */
+  background-color: orange;
+}
 
 
 /* Grid
