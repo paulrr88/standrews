@@ -1,0 +1,77 @@
+/* Shortcuts:
+#testing (from when creating website, delete these)
+*/
+
+/* Basic element customisations - body, font faces, paragraph layout etc */
+
+body {
+  background-color: green;  /* basic colour for layout #testing */
+}
+
+/* Classes and IDs - customisations for individual elements/groups of
+elements */
+
+#header {                   /* header image background etc - set for mobile,
+                            overridden by breakpoints below*/
+  background: url(../images/header.jpg) no-repeat center;
+  height: 197px;
+  text-align: center;       /* centres ALL text in header including
+                            navigation */
+}
+#header-title {             /* St. Andrew's Church text at top */
+  margin-bottom: 0;         /* removes margin that skeleton.css adds to h1; this
+                            allows other elements to be flush against it */
+}
+
+#sidebar {
+  background-color: #587793;
+}
+
+#footer {
+  text-align: center;
+}
+
+#nav {                      /* navigation links at top of each page */
+  margin-top: 450px;        /* aligns along the bottom of the header, will
+                            depend on size of image used */
+  font-size: 1.75rem;
+}
+#nav ul li {
+  margin-left: 20px;
+  display: inline;
+}
+
+.dye {                      /* for #testing layout pieces, added after column
+                            type */
+  background-color: orange;
+}
+
+@media (min-width: 550px) {
+  #header {                   /* resize header for smaller than tablet */
+    background: url(../images/header-550.jpg) no-repeat center;
+    height: 255px;
+  }
+
+  /* Below needs to be prevented from running when in full screen, hurts margin
+  on right */
+  .eight.columns.nomargin { /* trying to get rid of 4% margin-left in columns
+                            CSS so can have sidebar shadow - need content to be
+                            flush to the sidebar to achieve this so I can put
+                            it in the background of content */
+    margin-left: 0;         /* 4% got rid of! */
+    width: 69.3333333333%;  /* fixes lack of 4% margin left by adding 4% -
+                            breaks on mobile, doesn't line up on right */
+  }
+}
+@media (min-width: 750px) {
+  #header {                   /* resize header for tablet */
+    background: url(../images/header-750.jpg) no-repeat center;
+    height: 348px;
+  }
+}
+@media (min-width: 1000px) {
+  #header {                   /* resize header for desktop */
+    background: url(../images/header-1000.jpg);
+    height: 556px;
+  }
+}
