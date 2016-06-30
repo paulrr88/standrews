@@ -14,6 +14,18 @@ body {
 h1,h2,h3,h4 {
   font-family: "Georgia", serif;
   font-weight: 100;
+  margin: 0;
+  padding: 2rem;
+}
+
+p {
+  margin: 0;
+  padding: 2rem;
+}
+
+img {
+  margin: 0;
+  padding: 2rem;
 }
 
 /* Classes and IDs - customisations for individual elements/groups of
@@ -41,8 +53,9 @@ elements */
 }
 #header-title {                                           /* St. Andrew's Church text at top */
   font-size: 3rem;
-  margin-bottom: 0;                                       /* removes margin that skeleton.css adds to h1; this
+  margin: 0;                                              /* removes margin that skeleton.css adds to h1; this
                                                           allows other elements to be flush against it */
+  padding: 0;
 }
 
 #nav {                                                    /* navigation links at top of each page */
@@ -91,6 +104,22 @@ elements */
                                                           horizontal, applies on smallest mobile breakpoint
                                                           when supported by statements below */
 }
+#sidebar ul {
+  color: #fff;
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: 70%;
+}
+
+.left {
+  float: none;                                            /* just because floating doesn't work on mobile,
+                                                          same below */
+}
+
+.right {
+  float: none;
+}
 
 /* #breakpoints */
 
@@ -103,9 +132,6 @@ elements */
     font-size: 3.5rem;
   }
 
-  #nav ul {
-
-  }
   #nav ul li {
     display: inline-block;                                /* wraps with viewport size */
     font-size: 1.5rem;
@@ -145,6 +171,12 @@ elements */
     margin-left: 0;                                       /* 4% got rid of! */
     width: 69.3333333333%;                                /* fixes lack of 4% margin left by adding 4% -
                                                           breaks on mobile, doesn't line up on right */
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
   }
 }
 @media (min-width: 750px) {
