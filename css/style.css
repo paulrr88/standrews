@@ -6,7 +6,7 @@
 /* Basic element customisations - body, font faces, paragraph layout etc */
 
 body {
-  background-color: green;                                /* basic colour for layout #testing */
+  background-color: #fef0d9;
   font-family: "Verdana", sans-serif;
   font-size: 1.6em;
 }
@@ -15,7 +15,7 @@ h1,h2,h3,h4 {
   font-family: "Georgia", serif;
   font-weight: 100;
   margin: 0;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 p {
@@ -30,6 +30,27 @@ img {
 
 /* Classes and IDs - customisations for individual elements/groups of
 elements */
+
+/* CofE id selectors for JavaScript imported elements for news box on home page */
+#cofe-rss-box h2 a {
+  color: #000;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+#cofe-rss-box ul li {
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+/*#cofe-rss-box { border: 1px solid #A891C0; padding: 0; font-size: 90%; margin-bottom: 1em; }
+#cofe-rss-box h2 a { text-decoration: none; color: white;  }
+#cofe-rss-box h2 a:hover   { text-decoration: underline; color: white; }
+#cofe-rss-box h2  { background: #492D53  url('/images/rss/light-purple.jpg') no-repeat ;  margin: 0; padding: 0.5em; font-size: 120%; }
+#cofe-rss-box ul { margin: 0; padding: 0; color: #333; }
+#cofe-rss-box ul li  { list-style-type: none; margin: 0; border-top: 1px solid #A891C0; padding: 0.5em;   }
+#cofe-rss-box p { background: white url('/images/rss/cofe-siterss-purple-logo.gif') no-repeat right; border-top: 1px solid #A891C0; margin: 0; padding: 0.5em 0.5em 0 0.5em;  height: 23px; }
+#cofe-rss-box .rss-description { padding-top: 5px; display: block; }*/
 
 #content {
   background: #fff url(../images/sidebar.jpg) repeat-y;   /* shadow for sidebar */
@@ -112,6 +133,33 @@ elements */
   width: 70%;
 }
 
+#top {                                                    /* navigation links at top of each page */
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center;
+  width: 100%;                                            /* helps with centring navigation */
+}
+#top img {
+  margin: 0;
+  padding: 0;
+}
+#top ul {
+  margin: 20px 0 0 0;                                       /* removes margin so aligns with bottom of box better
+                                                          - keeps margin on top to space from other text*/
+}
+#top ul li {
+  display: block;                                         /* vertical list on mobile, changed to horizontal below */
+  font-size: 1.5rem;
+}
+#top ul li:last-child {
+  margin-right: 0;                                        /* prevents margin from throwing off last list item */
+}
+
+ul.nostyle {                                             /* removes styling from lists as needed */
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
 .left {
   float: none;                                            /* just because floating doesn't work on mobile,
                                                           same below */
@@ -160,6 +208,16 @@ elements */
     min-height: 500px;                                    /* assures it's always the same min height as content,
                                                           has to change with breakpoints so when it goes horizontal
                                                           it doesn't take up loads of space */
+  }
+
+  #top ul li {
+    display: inline-block;                                /* wraps with viewport size */
+    font-size: 1.5rem;
+    margin-right: 20px;                                   /* spacing for list items when horizontal */
+    text-align:left;
+    *display:inline;/* IE7 */
+    *zoom:1;
+
   }
 
                                                           /* Below needs to be prevented from running when in

@@ -29,11 +29,19 @@
 
 </head>
 <body>
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container"><!--Container for ALL content, everything inside this-->
-    <div class="row"><!--New row-->
+    <div class="row"><!--Row begins-->
+      <div class="twelve columns" id="top"><!--Start of top information area-->
+        <ul class="nostyle">
+          <li><a href="">Sitemap</a></li>
+          <li><a href="docs/PewSheet.pdf">Current Pew Sheet</a></li>
+          <li><a href="docs/AEDnotice.pdf"><img src="images/aed.jpg" /></a></li>
+        </ul>
+      </div><!--End of top information area-->
+    </div>
+    <div class="row"><!--Row begins-->
       <!--Header begin--><div class="twelve columns" id="header">
         <h1 id="header-title">St. Andrew's Church</h1>
       </div><!--Header ends-->
@@ -83,16 +91,19 @@
         <p>Seasonal Services will be shown on the Weekly Pew sheets, on the Notice boards, in the Parish Magazine, and on this website.</p>
 
         <p>See the <a href="services">Services page</a> for details of all services, and notification of any changes.</p>
+
+        <!--CofE JavaScript for news box -->
+        <script type="text/javascript" src="http://www.churchofengland.org/cofe-rss.js?feed=news&amp;n=3&amp;showdescription=0"></script>
+        <noscript><h2 class="cofe-rss-alternate-content"><a href="http://www.churchofengland.org/news/">News from the Church of England</a></h2></noscript>
       </div><!--Content ends-->
     </div><!--Row ends-->
     <div class="row"><!--New row-->
       <div class="twelve columns" id="footer"><!--Footer begins-->
         <p>&copy; 2016 St. Andrew's Church, Ferring | Designed by Paul Robinson</p>
-        <img src="facebook" />
+        <img src="images/facebook.jpg" />
       </div><!--Footer ends-->
     </div><!--Row ends-->
   </div><!--Container ends-->
-
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
