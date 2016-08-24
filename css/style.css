@@ -86,6 +86,12 @@ elements */
   text-align: center;
   width: 100%;                                            /* helps with centring navigation */
 }
+#nav a:link {
+  color: #fff;
+}
+#nav a:visited {
+  color: #fff;
+}
 #nav ul {
   margin: 20px 0 0 0;                                       /* removes margin so aligns with bottom of box better
                                                           - keeps margin on top to space from other text*/

@@ -2,6 +2,18 @@
 <html lang="en">
 <head>
 
+  <!--
+
+  ##TAG INDEX FOR ROGER##
+
+  - #cofe - CofE news box JavaScript insert
+  - #content - content! Text etc on pages.
+  - #footer - info at foot of website, includes current year etc.
+  - #nav - links at top to pages
+  - #side - sidebar for info on home page, extra links on other pages etc
+
+  -->
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -31,38 +43,52 @@
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container"><!--Container for ALL content, everything inside this-->
-    <div class="row"><!--Row begins-->
-      <div class="twelve columns" id="top"><!--Start of top information area-->
+  <!--Container for ALL content, everything inside this--><div class="container">
+
+    <!--Row begins--><div class="row">
+
+      <!--Start of top information area--><div class="twelve columns" id="top">
         <ul class="nostyle">
-          <li><a href="">Sitemap</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
           <li><a href="docs/PewSheet.pdf">Current Pew Sheet</a></li>
           <li><a href="docs/AEDnotice.pdf"><img src="images/aed.jpg" /></a></li>
         </ul>
       </div><!--End of top information area-->
-    </div>
-    <div class="row"><!--Row begins-->
+
+    </div><!--Row ends-->
+
+
+    <!--Row begins--><div class="row">
+
       <!--Header begin--><div class="twelve columns" id="header">
         <h1 id="header-title">St. Andrew's Church</h1>
       </div><!--Header ends-->
+
     </div><!--Row ends-->
-    <div id="row"><!--Row begins-->
-      <div class="twelve columns" id="nav"><!--Navigation begin-->
-        <div class="seven columns">
+
+
+    <!--Row begins--><div id="row">
+
+      <!--Navigation area begins--><div class="twelve columns" id="nav">
+        <!--Taglines at bottom of header--><div class="seven columns">
           <p id="left">In the Anglican Diocese of Chichester, and Worthing Deanery</p>
         </div>
         <div class="five columns">
           <p id="right">Church Lane, Ferring, West Sussex, BN12 5HN</p>
         </div>
-        <div class="centre"><!-- Centre class begin-->
+        <!--Navigation links begin #nav--><div class="centre">
           <ul>
-            <li>Home</li><li>Contacts</li><li>About Us</li><li>Services &amp; Dates</li><li>Clubs/Activities</li><li>Photos</li><li>Stewardship</li><li>Links</li>
+            <li><a href="#">Home</a></li><li><a href="contacts">Contacts</a></li><li><a href="about">About Us</a></li><li><a href="services">Services &amp; Dates</a></li><li><a href="clubs">Clubs/Activities</a></li><li><a href="photos">Photos</a></li><li><a href="stewardship">Stewardship</a></li><li><a href="links">Links</a></li>
           </ul>
-        </div><!--Centre class end-->
-      </div><!--Navigation ends-->
+        </div><!--Navigation links end-->
+      </div><!--Navigation area ends-->
+
     </div><!--Row ends-->
-    <div class="row"><!--New row-->
-      <!--Side navigation begin--><div class="four columns" id="sidebar">
+
+
+    <!--Row begins--><div class="row">
+
+      <!--Side navigation/info begin #side--><div class="four columns" id="sidebar">
         <ul>
           <li class="list-title">Services Update</li>
           <li>Next Family Service<br />
@@ -76,8 +102,9 @@
           <li><a href="http://www.standrewsferring.org.uk/Documents/Social_events_2016%20.pdf">Social Events 2016</a><br />
           (Further Information from Margaret Metcalf after the 9:30 Service in the Church Hall)</li>
         </ul>
-      </div><!--Side navigation ends-->
-      <div class="eight columns nomargin" id="content"><!--Content begins-->
+      </div><!--Side navigation/info ends-->
+
+      <!--Content begins #content--><div class="eight columns nomargin" id="content">
         <p>Welcome to the St Andrew's Church, Ferring, website, we hope that this site will be of interest to you.</p>
 
         <p>If you live or are visiting the area of Ferring, you will find a very warm welcome at our church. We are a friendly village
@@ -92,18 +119,26 @@
 
         <p>See the <a href="services">Services page</a> for details of all services, and notification of any changes.</p>
 
-        <!--CofE JavaScript for news box -->
+        <!--CofE JavaScript for news box #cofe-->
         <script type="text/javascript" src="http://www.churchofengland.org/cofe-rss.js?feed=news&amp;n=3&amp;showdescription=0"></script>
         <noscript><h2 class="cofe-rss-alternate-content"><a href="http://www.churchofengland.org/news/">News from the Church of England</a></h2></noscript>
       </div><!--Content ends-->
+
     </div><!--Row ends-->
-    <div class="row"><!--New row-->
-      <div class="twelve columns" id="footer"><!--Footer begins-->
+
+
+    <!--Row begins--><div class="row">
+
+      <!--Footer begins #footer--><div class="twelve columns" id="footer">
         <p>&copy; 2016 St. Andrew's Church, Ferring | Designed by Paul Robinson</p>
         <img src="images/facebook.jpg" />
       </div><!--Footer ends-->
+
     </div><!--Row ends-->
+
+
   </div><!--Container ends-->
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
