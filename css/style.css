@@ -8,7 +8,7 @@
 body {
   background-color: #fef0d9;
   font-family: "Verdana", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4rem;                                        /* for mobile, resized larger in breakpoint below */
 }
 
 h1,h2,h3,h4 {
@@ -26,6 +26,15 @@ p {
 img {
   margin: 0;
   padding: 2rem;
+}
+img.left {
+  float: left;
+}
+img.right {
+  float: right;
+}
+table {
+  font-size: 1.4rem;                                      /* for mobile, resized larger in breakpoint below */
 }
 
 /* Classes and IDs - customisations for individual elements/groups of
@@ -52,11 +61,21 @@ elements */
 #cofe-rss-box p { background: white url('/images/rss/cofe-siterss-purple-logo.gif') no-repeat right; border-top: 1px solid #A891C0; margin: 0; padding: 0.5em 0.5em 0 0.5em;  height: 23px; }
 #cofe-rss-box .rss-description { padding-top: 5px; display: block; }*/
 
+#contactsTable {
+  width: 75%;
+  margin: 0 auto;
+}
+
 #contentBox {
   background: #fff url(../images/sidebar.jpg) repeat-y;   /* shadow for sidebar */
   min-height: 500px;                                      /* keeps in line with sidebar to maintain illusion of
                                                           shadow */
   padding: 0 0 0 2rem;                                    /* keeps text from overlapping shadow */
+}
+
+#content {
+  background: #fff;                                       /* for pages that don't need the sidebar */
+  padding: 2em;
 }
 
 #footer {
@@ -77,6 +96,17 @@ elements */
   margin: 0;                                              /* removes margin that skeleton.css adds to h1; this
                                                           allows other elements to be flush against it */
   padding: 0;
+  text-align: center;
+}
+#top-cofe {
+  height: 0;
+  width: 0;
+  visibility: hidden;                                     /* Hides on mobile sizes so doesn't disrupt layout */
+}
+#top-shield {
+  height: 0;
+  width: 0;
+  visibility: hidden;                                     /* Hides on mobile sizes so doesn't disrupt layout */
 }
 
 #nav {                                                    /* navigation links at top of each page */
@@ -179,12 +209,30 @@ ul.nostyle {                                             /* removes styling from
 
 @media (min-width: 550px) {
 
+  body {
+    font-size: 1.6rem;                                    /* resize text for larger than mobile */
+  }
+
+  table {
+    font-size: 1.6rem;                                    /* resize text for larger than mobile */
+  }
+
   #header {                                               /* resize header for smaller than tablet */
     background: url(../images/header-550.jpg) no-repeat center;
     height: 255px;
   }
   #header-title {
     font-size: 3.5rem;
+  }
+  #top-cofe {
+    height: 99px;
+    width: 13.3333333333%;
+    visibility: visible;                                     /* Shows on larger than mobile sizes */
+  }
+  #top-shield {
+    height: 88px;
+    width: 13.3333333333%;
+    visibility: visible;                                     /* Shows on larger than mobile sizes */
   }
 
   #nav ul li {
