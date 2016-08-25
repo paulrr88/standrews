@@ -52,7 +52,7 @@ elements */
 #cofe-rss-box p { background: white url('/images/rss/cofe-siterss-purple-logo.gif') no-repeat right; border-top: 1px solid #A891C0; margin: 0; padding: 0.5em 0.5em 0 0.5em;  height: 23px; }
 #cofe-rss-box .rss-description { padding-top: 5px; display: block; }*/
 
-#content {
+#contentBox {
   background: #fff url(../images/sidebar.jpg) repeat-y;   /* shadow for sidebar */
   min-height: 500px;                                      /* keeps in line with sidebar to maintain illusion of
                                                           shadow */
@@ -125,13 +125,13 @@ elements */
   width: 95%;
 }
 
-#sidebar {
+#sidebarBox {
   background: #587793;
   min-height: 0;                                          /* prevents sidebar from taking up space when
                                                           horizontal, applies on smallest mobile breakpoint
                                                           when supported by statements below */
 }
-#sidebar ul {
+#sidebarBox ul {
   color: #fff;
   list-style: none;
   margin: 20px auto;
@@ -178,6 +178,7 @@ ul.nostyle {                                             /* removes styling from
 /* #breakpoints */
 
 @media (min-width: 550px) {
+
   #header {                                               /* resize header for smaller than tablet */
     background: url(../images/header-550.jpg) no-repeat center;
     height: 255px;
@@ -210,7 +211,7 @@ ul.nostyle {                                             /* removes styling from
     padding: 0;
     text-align: right;
   }
-  #sidebar {
+  #sidebarBox {
     min-height: 500px;                                    /* assures it's always the same min height as content,
                                                           has to change with breakpoints so when it goes horizontal
                                                           it doesn't take up loads of space */
