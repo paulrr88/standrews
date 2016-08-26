@@ -17,7 +17,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>St. Andrew's Church Ferring</title>
+  <title>St. Andrew's Church Ferring - Contacts</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -104,7 +104,12 @@
 
     <!--Row begins--><div class="row">
 
+
+
       <!--Content begins #content--><div class="twelve columns" id="content">
+
+      <h1 class="title">Contacts</h1>
+
       <table id="contactsTable" summary="St. Andrew's Church list of contacts">
         <thead>
           <tr>
@@ -115,12 +120,109 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Vicar</th>
-            <th scope="row">Rev'd Gary Ingram<br />
-            19 Grange Park, Ferring</th>
-            <th scope="row">W 241645</th>
+            <td scope="row">Vicar</td>
+            <td scope="row">Rev'd Gary Ingram<br />
+            19 Grange Park, Ferring</td>
+            <td scope="row">W 241645</td>
           </tr>
-
+          <tr>
+            <td scope="row">Curate</td>
+            <td scope="row">Rev'd Jill Simpson</td>
+            <td scope="row">W 872746</td>
+          </tr>
+          <tr>
+            <td scope="row">Clergy In Attendance</td>
+            <td scope="row">Canon Paul Simmonds<br />
+            37 Ocean Drive, Ferring<br /><br />
+            Ven. Hugh Glaisyer<br />
+            Florence Villa, Hangleton Lane, Ferring</td>
+            <td scope="row">Paul: W 242679<br /><br /><br />
+            Hugh: W 244688</td>
+          </tr>
+          <tr>
+            <td scope="row">Church Wardens</td>
+            <td scope="row">Gail Holly<br /><br />
+            John Soper</td>
+            <td scope="row">Gail: W 244393<br />
+              <a href="form-warden">Email</a>: <a href="mailto:churchwarden@standrewsferring.org.uk">churchwarden@standrewsferring.org.uk</a>
+              <br /><br />
+              John: W 505151</td>
+          </tr>
+          <tr>
+            <td scope="row">Church Centre Bookings</td>
+            <td scope="row">David Metcalf</td>
+            <td scope="row">W 244420<br />
+            <a href="form-bookings">Email</a>: <a href="mailto:bookings@standrewsferring.org.uk">bookings@standrewsferring.org.uk</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Verger</td>
+            <td scope="row">Daphne Carter</td>
+            <td scope="row">W 245260</td>
+          </tr>
+          <tr>
+            <td scope="row">PCC Hon Secretary</td>
+            <td scope="row">Susan Maund</td>
+            <td scope="row">W 242105<br />
+            <a href="form-secretary">Email</a>: <a href="mailto:secretary@standrewsferring.org.uk">secretary@standrewsferring.org.uk</a></td>
+          </tr>
+          <tr>
+            <td scope="row">PCC Hon Treasurer</td>
+            <td scope="row">Alan Plummer</td>
+            <td scope="row">W 247963</td>
+          </tr>
+          <tr>
+            <td scope="row">Gift Aid Secretary (Planned Giving Officer)</td>
+            <td scope="row">Gwen Chinnery</td>
+            <td scope="row">W 700950</td>
+          </tr>
+          <tr>
+            <td scope="row">Electoral Roll Officer</td>
+            <td scope="row">Sue Pratt</td>
+            <td scope="row">W 248266</td>
+          </tr>
+          <tr>
+            <td scope="row">Organist</td>
+            <td scope="row">Robin Bruford/John Kay</td>
+          </tr>
+          <tr>
+            <td scope="row">Head Teacher of Church School</td>
+            <td scope="row">Gillian Silk</td>
+            <td scope="row">W 243945</td>
+          </tr>
+          <tr>
+            <td scope="row"><strong>Parish Magazine:</strong></td>
+          </tr>
+          <tr>
+            <td scope="row">Editors</td>
+            <td scope="row">Ros Knight (For Church news)<br /><br />
+            Sue Plumb (For Village news)
+            </td>
+            <td scope="row">Ros: W 242284<br /><br />
+            Sue: W 247607</td>
+          </tr>
+          <tr>
+            <td scope="row">Advertisements</td>
+            <td scope="row">Position Vacant</td>
+          </tr>
+          <tr>
+            <td scope="row">Treasurer</td>
+            <td scope="row">Emma Newman</td>
+            <td scope="row">W 242549</td>
+          </tr>
+          <tr>
+            <td scope="row">Distribution</td>
+            <td scope="row">Simon Williams</td>
+            <td scope="row">W 240881</td>
+          </tr>
+          <tr>
+            <td scope="row"><br /></td>
+          </tr>
+          <tr>
+            <td scope="row">Webmaster</td>
+            <td scope="row">Ferring Silver Surfers</td>
+            <td scope="row">W 242327<br />
+            <a href="form-webmaster">Email</a>: <a href="mailto:webmaster@standrewsferring.org.uk">webmaster@standrewsferring.org.uk</a></td>
+          </tr>
         </tbody>
       </table>
 
@@ -141,52 +243,27 @@
 
   </div><!--Container ends-->
 
-  <!--Script to make content and sidebar same height no matter what!--><script>
-    // placing objects inside variables
+  <!--fix for mobile table layout--><script>
+    var headertext = [];
+    var headers = document.querySelectorAll("thead");
+    var tablebody = document.querySelectorAll("tbody");
 
-    //#added the below if statement to make sure this doesn't run on mobile
-
-    if ($(window).width() > 550){
-      var content = $('#contentBox');
-      var sidebar = $('#sidebarBox');
-      var count = 0;
-      var myTimer;
-
-      function setEqualContainer() {
-      	// get content and sidebar height in variables
-      	var getContentHeight = content.outerHeight();
-      	var getSidebarHeight = sidebar.outerHeight();
-
-      	// check if content height is bigger than sidebar
-      	if ( getContentHeight > getSidebarHeight ) {
-      		sidebar.css('min-height', getContentHeight);
-      	}
-
-      	// check if sidebar height is bigger than content
-      	if ( getSidebarHeight > getContentHeight ) {
-      		content.css('min-height', getSidebarHeight);
-      	}
-      }
-
-      // creating the timer which will run every 500 milliseconds
-      // and will stop after the container will be loaded
-      // ...or after 15 seconds to not eat a lot of memory
-      myTimer = setInterval( function() {
-      	count++;
-
-      	if ( $('.testContainer').length == 0 ) {
-      		setEqualContainer();
-      	} else {
-      		setEqualContainer();
-      		clearInterval(myTimer);
-      	}
-
-      	if ( count == 15) {
-      		clearInterval(myTimer);
-      	}
-      }, 500);
+    for (var i = 0; i < headers.length; i++) {
+    	headertext[i]=[];
+    	for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+    	  var current = headrow;
+    	  headertext[i].push(current.textContent);
+    	  }
     }
-  </script>
+
+    for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+    	for (var i = 0, row; row = tbody.rows[i]; i++) {
+    	  for (var j = 0, col; col = row.cells[j]; j++) {
+    	    col.setAttribute("data-th", headertext[h][j]);
+    	  }
+    	}
+    }
+  </script><!--end of fix script-->
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

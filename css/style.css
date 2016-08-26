@@ -27,15 +27,23 @@ img {
   margin: 0;
   padding: 2rem;
 }
+
+table {
+  font-size: 1.4rem;                                      /* for mobile, resized larger in breakpoint below */
+}
+
+h1,h2,h3.title {                                                /* title at top of all content pages */
+  padding: 1em 0 1.5em 0;
+  text-align: center;
+}
+
 img.left {
   float: left;
 }
 img.right {
   float: right;
 }
-table {
-  font-size: 1.4rem;                                      /* for mobile, resized larger in breakpoint below */
-}
+
 
 /* Classes and IDs - customisations for individual elements/groups of
 elements */
@@ -61,9 +69,13 @@ elements */
 #cofe-rss-box p { background: white url('/images/rss/cofe-siterss-purple-logo.gif') no-repeat right; border-top: 1px solid #A891C0; margin: 0; padding: 0.5em 0.5em 0 0.5em;  height: 23px; }
 #cofe-rss-box .rss-description { padding-top: 5px; display: block; }*/
 
-#contactsTable {
+#contactsTable {                                          /* table on contacts page */
+  table-layout: fixed;
   width: 75%;
   margin: 0 auto;
+}
+#contactsTable td {
+  word-wrap: break-word;
 }
 
 #contentBox {
@@ -168,6 +180,15 @@ elements */
   text-align: center;
   width: 70%;
 }
+#sidebarLinks a:link {                                    /* sidebar link list stylings, About Us page etc */
+  color: #fff;
+}
+#sidebarLinks a:visited {
+  color: #fff;
+}
+#sidebarLinks li {
+  padding-bottom: 1.5em;
+}
 
 #top {                                                    /* navigation links at top of each page */
   color: #fff;
@@ -206,6 +227,33 @@ ul.nostyle {                                             /* removes styling from
 }
 
 /* #breakpoints */
+
+@media screen and (max-width: 600px) {                    /* fix for table width, converts to pleasing
+                                                          mobile layout, for contacts page especially */
+  table {
+    width:100%;
+  }
+  thead {
+    display: none;
+  }
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align:center;
+  }
+}
 
 @media (min-width: 550px) {
 
