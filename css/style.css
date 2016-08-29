@@ -44,6 +44,11 @@ img.right {
   float: right;
 }
 
+ul.nostyle {                                             /* removes styling from lists as needed */
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
 
 /* Classes and IDs - customisations for individual elements/groups of
 elements */
@@ -212,9 +217,9 @@ elements */
   margin-right: 0;                                        /* prevents margin from throwing off last list item */
 }
 
-ul.nostyle {                                             /* removes styling from lists as needed */
-  list-style: none;
-  margin-left: 1.5rem;
+#whoswhoBox {                                             /* box for photos on Who's Who page, centres them etc */
+  margin: 0 auto;
+  width: 200px;                                           /* good width for mobile */
 }
 
 .left {
@@ -321,6 +326,15 @@ ul.nostyle {                                             /* removes styling from
     *display:inline;/* IE7 */
     *zoom:1;
 
+  }
+
+  #whoswhoBox {                                           /* box for photos on Who's Who page, centres them etc */
+    margin: 0 auto;
+    width: 400px;                                         /* widens for tablet and larger resolution */
+  }
+  #whoswhoBox .fix {
+    margin-left: 15px;                                    /* because first column is for some reason misaligned
+                                                          added to first five columns on page */
   }
 
                                                           /* Below needs to be prevented from running when in
