@@ -37,11 +37,17 @@ h1,h2,h3.title {                                                /* title at top 
   text-align: center;
 }
 
+img.fluid {
+  max-width: 90%;
+}
 img.left {
   float: left;
 }
 img.right {
   float: right;
+}
+img.200 {
+  width: 200px;
 }
 
 ul.nostyle {                                             /* removes styling from lists as needed */
@@ -74,13 +80,20 @@ elements */
 #cofe-rss-box p { background: white url('/images/rss/cofe-siterss-purple-logo.gif') no-repeat right; border-top: 1px solid #A891C0; margin: 0; padding: 0.5em 0.5em 0 0.5em;  height: 23px; }
 #cofe-rss-box .rss-description { padding-top: 5px; display: block; }*/
 
-#contactsTable {                                          /* table on contacts page */
+#table {                                                  /* table on contacts page etc */
+  margin: 0 auto;
   table-layout: fixed;
   width: 75%;
-  margin: 0 auto;
 }
-#contactsTable td {
+#table td {
   word-wrap: break-word;
+}
+
+#tableBig {                                                  /* tables with more columns, needs smaller font */
+  font-size: 1.2rem;
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 90%;
 }
 
 #contentBox {
