@@ -36,7 +36,13 @@ h1,h2,h3.title {                                                /* title at top 
   padding: 1em 0 1.5em 0;
   text-align: center;
 }
+h3.contents {
+  padding: 1.5em 0 0 0;
+}
 
+img.200 {
+  width: 200px;
+}
 img.fluid {
   max-width: 90%;
 }
@@ -46,13 +52,24 @@ img.left {
 img.right {
   float: right;
 }
-img.200 {
-  width: 200px;
+
+p.backtotop {
+  font-weight: bolder;
+  padding: 2em 0 2em 0;
+  text-align: center;
+
 }
 
 ul.nostyle {                                             /* removes styling from lists as needed */
   list-style: none;
   margin-left: 1.5rem;
+}
+
+ul.contents {
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: 70%;
 }
 
 
@@ -106,6 +123,10 @@ elements */
 #content {
   background: #fff;                                       /* for pages that don't need the sidebar */
   padding: 2em;
+}
+#content p {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #footer {
@@ -233,6 +254,12 @@ elements */
 #whoswhoBox {                                             /* box for photos on Who's Who page, centres them etc */
   margin: 0 auto;
   width: 200px;                                           /* good width for mobile */
+}
+
+.centre-600 {                                             /* centres images with 600px width */
+  max-width: 100%;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .left {
@@ -368,6 +395,10 @@ elements */
   }
 }
 @media (min-width: 750px) {
+  #content p {                                            /* better margins for text on desktop */
+    width: 60%;
+    margin: 0 auto;
+  }
   #header {                                               /* resize header for tablet */
     background: url(../images/header-750.jpg) no-repeat center;
     height: 277px;
