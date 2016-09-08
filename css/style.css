@@ -49,6 +49,12 @@ img.fluid {
 img.left {
   float: left;
 }
+img.link {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
 img.right {
   float: right;
 }
@@ -58,6 +64,10 @@ p.backtotop {
   padding: 2em 0 2em 0;
   text-align: center;
 
+}
+
+td.link-logo {
+  width: 40px;
 }
 
 ul.nostyle {                                             /* removes styling from lists as needed */
