@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,22 +6,20 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>St. Andrew's Church Ferring</title>
-  <meta name="description" content="">
+  <title>Home &mdash; St. Andrew's Church, Ferring</title>
+  <meta name="description" content="Welcome to the St Andrew's Church, Ferring, website, we hope that this site will be of interest to you. If you live or are visiting the area of Ferring, you will find a very warm welcome at our church.">
+  <meta name="keywords" content="andrew, anglican, church, coast, england, ferring, parish, south, sussex, west, worthing, village, communion, family, pets, services, sunday">
   <meta name="author" content="St. Andrew's Church, Ferring">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
+  <!-- CSS & JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css"><!-- reset file do not change -->
   <link rel="stylesheet" href="css/skeleton.css"><!-- framework CSS -->
   <link rel="stylesheet" href="css/style.css"><!--my additions-->
-
-  <!-- JavaScript
-  __________________________________________________ -->
 
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
@@ -29,6 +28,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -78,13 +78,12 @@
         </div>
         <!--Navigation links begin #nav--><div class="centre">
           <ul>
-            <li><a href="#">Home</a></li><li><a href="contacts">Contacts</a></li><li><a href="about">About Us</a></li><li><a href="services">Services &amp; Dates</a></li><li><a href="clubs">Clubs/Activities</a></li><li><a href="photos">Photos</a></li><li><a href="stewardship">Stewardship</a></li><li><a href="links">Links</a></li>
+            <li><a href="">Home</a></li><li><a href="contacts">Contacts</a></li><li><a href="about">About Us</a></li><li><a href="services">Services &amp; Dates</a></li><li><a href="clubs">Clubs/Activities</a></li><li><a href="photos">Photos</a></li><li><a href="stewardship">Stewardship</a></li><li><a href="links">Links</a></li>
           </ul>
         </div><!--Navigation links end-->
       </div><!--Navigation area ends-->
 
     </div><!--Row ends-->
-
 
     <!--Row begins--><div class="row">
 
@@ -126,7 +125,6 @@
 
     </div><!--Row ends-->
 
-
     <!--Row begins--><div class="row">
 
       <!--Footer begins #footer--><div class="twelve columns" id="footer">
@@ -136,10 +134,10 @@
 
     </div><!--Row ends-->
 
-
   </div><!--Container ends-->
 
-  <!--Script to make content and sidebar same height no matter what!--><script>
+  <script>
+    // Script to make content and sidebar same height no matter what!
     // placing objects inside variables
 
     //#added the below if statement to make sure this doesn't run on mobile
@@ -151,42 +149,43 @@
       var myTimer;
 
       function setEqualContainer() {
-      	// get content and sidebar height in variables
-      	var getContentHeight = content.outerHeight();
-      	var getSidebarHeight = sidebar.outerHeight();
+        // get content and sidebar height in variables
+        var getContentHeight = content.outerHeight();
+        var getSidebarHeight = sidebar.outerHeight();
 
-      	// check if content height is bigger than sidebar
-      	if ( getContentHeight > getSidebarHeight ) {
-      		sidebar.css('min-height', getContentHeight);
-      	}
+        // check if content height is bigger than sidebar
+        if ( getContentHeight > getSidebarHeight ) {
+          sidebar.css('min-height', getContentHeight);
+        }
 
-      	// check if sidebar height is bigger than content
-      	if ( getSidebarHeight > getContentHeight ) {
-      		content.css('min-height', getSidebarHeight);
-      	}
+        // check if sidebar height is bigger than content
+        if ( getSidebarHeight > getContentHeight ) {
+          content.css('min-height', getSidebarHeight);
+        }
       }
 
       // creating the timer which will run every 500 milliseconds
       // and will stop after the container will be loaded
       // ...or after 15 seconds to not eat a lot of memory
       myTimer = setInterval( function() {
-      	count++;
+        count++;
 
-      	if ( $('.testContainer').length == 0 ) {
-      		setEqualContainer();
-      	} else {
-      		setEqualContainer();
-      		clearInterval(myTimer);
-      	}
+        if ( $('.testContainer').length == 0 ) {
+          setEqualContainer();
+        } else {
+          setEqualContainer();
+          clearInterval(myTimer);
+        }
 
-      	if ( count == 15) {
-      		clearInterval(myTimer);
-      	}
+        if ( count == 15) {
+          clearInterval(myTimer);
+        }
       }, 500);
     }
   </script>
 
+  
 <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
