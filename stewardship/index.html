@@ -1,50 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <!--
-
-  ##TAG INDEX FOR ROGER##
-
-  - #cofe - CofE news box JavaScript insert
-  - #content - content! Text etc on pages.
-  - #footer - info at foot of website, includes current year etc.
-  - #nav - links at top to pages
-  - #side - sidebar for info on home page, extra links on other pages etc
-
-  -->
-
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>St. Andrew's Church Ferring - Stewardship</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Stewardship at St. Andrew's &mdash; St. Andrew's Church, Ferring</title>
+  <meta name="description" content="Details of how you can support St. Andrew's Church, Ferring.">
+  <meta name="keywords" content="andrew, anglican, church, coast, england, ferring, parish, saint, south, st, sussex, west, worthing, village, address, charity, donate, donation, fund, giving, offering, payment, stewardship, support">
+  <meta name="author" content="St. Andrew's Church, Ferring">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
+  <!-- CSS & JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../css/normalize.css"><!-- reset file do not change -->
   <link rel="stylesheet" href="../css/skeleton.css"><!-- framework CSS -->
   <link rel="stylesheet" href="../css/style.css"><!--my additions-->
 
-  <!-- JavaScript
-  __________________________________________________ -->
-
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
+  
+  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -67,17 +51,11 @@
     <!--Row begins--><div class="row">
 
       <!--Header begin--><div class="twelve columns" id="header">
-        <div class="two columns" id="top-shield">
-          <img src="../images/shield.png" />
-        </div>
 
-        <div class="eight columns">
+        <div class="twelve columns">
           <h1 id="header-title">St. Andrew's Church</h1>
         </div>
 
-        <div class="two columns" id="top-cofe">
-          <img src="../images/cofe.png" />
-        </div>
       </div><!--Header ends-->
 
     </div><!--Row ends-->
@@ -100,7 +78,6 @@
       </div><!--Navigation area ends-->
 
     </div><!--Row ends-->
-
 
     <!--Row begins--><div class="row">
 
@@ -138,67 +115,21 @@
 
     </div><!--Row ends-->
 
-
     <!--Row begins--><div class="row">
 
       <!--Footer begins #footer--><div class="twelve columns" id="footer">
-        <p>&copy; 2016 St. Andrew's Church, Ferring | Designed by Paul Robinson</p>
-        <img src="images/facebook.jpg" />
+        <p><strong>&copy; 2016 St. Andrew's Church, Ferring | Designed by Paul Robinson</strong></p>
+        <a href="http://www.facebook.com/standrewsferring"><img src="../images/facebook.png" alt="St. Andrew's Church Ferring Facebook" /></a>
+
       </div><!--Footer ends-->
 
     </div><!--Row ends-->
 
-
   </div><!--Container ends-->
 
-  <!--Script to make content and sidebar same height no matter what!--><script>
-    // placing objects inside variables
-
-    //#added the below if statement to make sure this doesn't run on mobile
-
-    if ($(window).width() > 550){
-      var content = $('#contentBox');
-      var sidebar = $('#sidebarBox');
-      var count = 0;
-      var myTimer;
-
-      function setEqualContainer() {
-      	// get content and sidebar height in variables
-      	var getContentHeight = content.outerHeight();
-      	var getSidebarHeight = sidebar.outerHeight();
-
-      	// check if content height is bigger than sidebar
-      	if ( getContentHeight > getSidebarHeight ) {
-      		sidebar.css('min-height', getContentHeight);
-      	}
-
-      	// check if sidebar height is bigger than content
-      	if ( getSidebarHeight > getContentHeight ) {
-      		content.css('min-height', getSidebarHeight);
-      	}
-      }
-
-      // creating the timer which will run every 500 milliseconds
-      // and will stop after the container will be loaded
-      // ...or after 15 seconds to not eat a lot of memory
-      myTimer = setInterval( function() {
-      	count++;
-
-      	if ( $('.testContainer').length == 0 ) {
-      		setEqualContainer();
-      	} else {
-      		setEqualContainer();
-      		clearInterval(myTimer);
-      	}
-
-      	if ( count == 15) {
-      		clearInterval(myTimer);
-      	}
-      }, 500);
-    }
-  </script>
-
+  
+  
 <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,30 +6,30 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>St. Andrew's Church Ferring - Priests at St. Andrew's</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Priests at St. Andrew's &mdash; About Us &mdash; St. Andrew's Church, Ferring</title>
+  <meta name="description" content="Priests at St. Andrew's Church, Ferring over the last 800 years!">
+  <meta name="keywords" content="andrew, anglican, church, coast, england, ferring, parish, saint, south, st, sussex, west, worthing, village, 1250, doomsday, history, norman, preacher, priest, saxon, vicar">
+  <meta name="author" content="St. Andrew's Church, Ferring">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
+  <!-- CSS & JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../../css/normalize.css"><!-- reset file do not change -->
   <link rel="stylesheet" href="../../css/skeleton.css"><!-- framework CSS -->
   <link rel="stylesheet" href="../../css/style.css"><!--my additions-->
 
-  <!-- JavaScript
-  __________________________________________________ -->
-
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
+  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../../images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,17 +52,11 @@
     <!--Row begins--><div class="row">
 
       <!--Header begin--><div class="twelve columns" id="header">
-        <div class="two columns" id="top-shield">
-          <img src="../../images/shield.png" />
-        </div>
 
-        <div class="eight columns">
+        <div class="twelve columns">
           <h1 id="header-title">St. Andrew's Church</h1>
         </div>
 
-        <div class="two columns" id="top-cofe">
-          <img src="../../images/cofe.png" />
-        </div>
       </div><!--Header ends-->
 
     </div><!--Row ends-->
@@ -84,7 +79,6 @@
       </div><!--Navigation area ends-->
 
     </div><!--Row ends-->
-
 
     <!--Row begins--><div class="row">
 
@@ -271,14 +265,6 @@
               <td scope="row">2011</td>
               <td scope="row">Gary Simon Ingram (Vicar)</td>
             </tr>
-            <!--
-
-
-
-
-
-*
-*	2011	Gary Simon Ingram  (Vicar)-->
           </tbody>
         </table>
 
@@ -290,20 +276,20 @@
 
     </div><!--Row ends-->
 
-
     <!--Row begins--><div class="row">
 
       <!--Footer begins #footer--><div class="twelve columns" id="footer">
-        <p>&copy; 2016 St. Andrew's Church, Ferring | Designed by Paul Robinson</p>
-        <img src="images/facebook.jpg" />
+        <p><strong>&copy; 2016 St. Andrew's Church, Ferring | Designed by Paul Robinson</strong></p>
+        <a href="http://www.facebook.com/standrewsferring"><img src="../../images/facebook.png" alt="St. Andrew's Church Ferring Facebook" /></a>
+
       </div><!--Footer ends-->
 
     </div><!--Row ends-->
 
-
   </div><!--Container ends-->
 
-  <!--Script to make content and sidebar same height no matter what!--><script>
+  <script>
+    // Script to make content and sidebar same height no matter what!
     // placing objects inside variables
 
     //#added the below if statement to make sure this doesn't run on mobile
@@ -315,42 +301,66 @@
       var myTimer;
 
       function setEqualContainer() {
-      	// get content and sidebar height in variables
-      	var getContentHeight = content.outerHeight();
-      	var getSidebarHeight = sidebar.outerHeight();
+        // get content and sidebar height in variables
+        var getContentHeight = content.outerHeight();
+        var getSidebarHeight = sidebar.outerHeight();
 
-      	// check if content height is bigger than sidebar
-      	if ( getContentHeight > getSidebarHeight ) {
-      		sidebar.css('min-height', getContentHeight);
-      	}
+        // check if content height is bigger than sidebar
+        if ( getContentHeight > getSidebarHeight ) {
+          sidebar.css('min-height', getContentHeight);
+        }
 
-      	// check if sidebar height is bigger than content
-      	if ( getSidebarHeight > getContentHeight ) {
-      		content.css('min-height', getSidebarHeight);
-      	}
+        // check if sidebar height is bigger than content
+        if ( getSidebarHeight > getContentHeight ) {
+          content.css('min-height', getSidebarHeight);
+        }
       }
 
       // creating the timer which will run every 500 milliseconds
       // and will stop after the container will be loaded
       // ...or after 15 seconds to not eat a lot of memory
       myTimer = setInterval( function() {
-      	count++;
+        count++;
 
-      	if ( $('.testContainer').length == 0 ) {
-      		setEqualContainer();
-      	} else {
-      		setEqualContainer();
-      		clearInterval(myTimer);
-      	}
+        if ( $('.testContainer').length == 0 ) {
+          setEqualContainer();
+        } else {
+          setEqualContainer();
+          clearInterval(myTimer);
+        }
 
-      	if ( count == 15) {
-      		clearInterval(myTimer);
-      	}
+        if ( count == 15) {
+          clearInterval(myTimer);
+        }
       }, 500);
     }
   </script>
 
+  <script>
+    // fix for mobile table layout
+
+    var headertext = [];
+    var headers = document.querySelectorAll("thead");
+    var tablebody = document.querySelectorAll("tbody");
+
+    for (var i = 0; i < headers.length; i++) {
+      headertext[i]=[];
+      for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+        var current = headrow;
+        headertext[i].push(current.textContent);
+        }
+    }
+
+    for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+      for (var i = 0, row; row = tbody.rows[i]; i++) {
+        for (var j = 0, col; col = row.cells[j]; j++) {
+          col.setAttribute("data-th", headertext[h][j]);
+        }
+      }
+    }
+  </script>
+
 <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

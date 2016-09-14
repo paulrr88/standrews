@@ -18,6 +18,20 @@ h1,h2,h3,h4 {
   padding: 1.5rem;
 }
 
+h1 {                                                      /* header sizes for mobile, overridden in breakpoint
+                                                          below */
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
 p {
   margin: 0;
   padding: 1.5rem;
@@ -59,16 +73,22 @@ img.right {
   float: right;
 }
 
+h3.list-title {                                           /* title used in sidebar lists on website */
+  background: #fed957;
+  color: #000;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
 p.backtotop {
   font-weight: bolder;
   padding: 2em 0 2em 0;
   text-align: center;
 
-}
-
-.link-logo {                                             /* Links page div style to make table cell fit logo image size */
-  margin: 0 auto;
-  width: 100px;
 }
 
 ul.nostyle {                                             /* removes styling from lists as needed */
@@ -88,21 +108,40 @@ ul.contents {
 elements */
 
 /* CofE id selectors for JavaScript imported elements for news box on home page */
+
+#cofe-rss-box {
+  background: #fff9d5;
+  margin: 0 40px 2em 20px;
+}
+
 #cofe-rss-box h2 a {
   color: #000;
-  font-size: 3rem;
   text-decoration: none;
+}
+
+#cofe-rss-box h2  {
+  background: #ffdb30;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em;
 }
 
 #cofe-rss-box ul li {
   list-style: none;
   margin-left: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#cofe-rss-box p {
+  text-align: center;
 }
 
 /*#cofe-rss-box { border: 1px solid #A891C0; padding: 0; font-size: 90%; margin-bottom: 1em; }
 #cofe-rss-box h2 a { text-decoration: none; color: white;  }
 #cofe-rss-box h2 a:hover   { text-decoration: underline; color: white; }
-#cofe-rss-box h2  { background: #492D53  url('/images/rss/light-purple.jpg') no-repeat ;  margin: 0; padding: 0.5em; font-size: 120%; }
+
 #cofe-rss-box ul { margin: 0; padding: 0; color: #333; }
 #cofe-rss-box ul li  { list-style-type: none; margin: 0; border-top: 1px solid #A891C0; padding: 0.5em;   }
 #cofe-rss-box p { background: white url('/images/rss/cofe-siterss-purple-logo.gif') no-repeat right; border-top: 1px solid #A891C0; margin: 0; padding: 0.5em 0.5em 0 0.5em;  height: 23px; }
@@ -145,6 +184,9 @@ elements */
 }
 
 #footer {
+  background: #233341;
+  color: #fff;
+  font-size: 0.75em;
   text-align: center;
 }
 
@@ -234,6 +276,13 @@ elements */
   text-align: center;
   width: 70%;
 }
+#sidebarBox a:link {                                      /* keeps any links in sidebarBox from blending in
+                                                          with blue background */
+  color: #fff;
+}
+#sidebarBox a:visited {
+  color: #fff;
+}
 #sidebarLinks a:link {                                    /* sidebar link list stylings, About Us page etc */
   color: #fff;
 }
@@ -275,6 +324,11 @@ elements */
   max-width: 100%;
   width: 600px;
   margin: 0 auto;
+}
+
+.link-logo {                                             /* Links page div style to make table cell fit logo image size */
+  margin: 0 auto;
+  width: 100px;
 }
 
 .left {
@@ -319,6 +373,19 @@ elements */
 
   body {
     font-size: 1.6rem;                                    /* resize text for larger than mobile */
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.4rem;
   }
 
   table {

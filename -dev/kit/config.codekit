@@ -20,12 +20,48 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/about-history.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about-history.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/about\/history\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/about-priests.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about-priests.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/about\/priests\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/about-wardens.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about-wardens.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/about\/wardens\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
 	"\/about.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/about.kit",
 		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/about\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/clubs.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clubs.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/clubs\/index.html",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
@@ -44,6 +80,42 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.kit",
 		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/links.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/links.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/links\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/services.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/services.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/services\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/steward.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/steward.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/stewardship\/index.html",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		}
