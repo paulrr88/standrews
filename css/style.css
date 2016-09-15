@@ -103,6 +103,11 @@ ul.contents {
   width: 70%;
 }
 
+ul.sitemap {
+  margin: 20px auto;
+  width: 70%;
+}
+
 
 /* Classes and IDs - customisations for individual elements/groups of
 elements */
@@ -189,6 +194,22 @@ elements */
   font-size: 0.75em;
   text-align: center;
 }
+#footer a:link {
+  color: #fff;
+}
+#footer a:visited {
+  color: #fff;
+}
+#footer ul li {
+  border-right: #fff solid 1px;                           /* adds the line effect to right of each link in footer */
+  display: inline-block;                                  /* displays everything horizontal instead of vertical */
+  margin-right: 20px;
+  padding-right: 20px;
+}
+#footer ul li:last-child {
+  border-right: 0;                                        /* stops border on last link */
+  margin-right: 0;
+}
 
 #header {                                                 /* header image background etc - set for mobile,
                                                           overridden by breakpoints below*/
@@ -200,21 +221,13 @@ elements */
                                                           navigation */
 }
 #header-title {                                           /* St. Andrew's Church text at top */
+  color: #fff;
   font-size: 3rem;
   margin: 0;                                              /* removes margin that skeleton.css adds to h1; this
                                                           allows other elements to be flush against it */
   padding: 0;
   text-align: center;
-}
-#top-cofe {
-  height: 0;
-  width: 0;
-  visibility: hidden;                                     /* Hides on mobile sizes so doesn't disrupt layout */
-}
-#top-shield {
-  height: 0;
-  width: 0;
-  visibility: hidden;                                     /* Hides on mobile sizes so doesn't disrupt layout */
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
 #nav {                                                    /* navigation links at top of each page */
@@ -225,7 +238,10 @@ elements */
   width: 100%;                                            /* helps with centring navigation */
 }
 #nav a:link {
+  border-right: 0;                                        /* gets rid of the dividing line to the right of
+                                                          each nav link on mobile */
   color: #fff;
+  padding-right: 20px;
 }
 #nav a:visited {
   color: #fff;
@@ -241,16 +257,19 @@ elements */
 #nav ul li:last-child {
   margin-right: 0;                                        /* prevents margin from throwing off last list item */
 }
-#nav p#left {                                             /* aligns nav text for diocese etc to the left and sizes
-                                                          down so it doesn't wrap too much on max res */
+#nav ul li:last-child a:link {
+  border-right: 0;                                        /* gets rid of line on final link in nav */
+}
+#nav p {
   font-size: 1.0rem;
+}
+#nav #left {                                             /* aligns nav text for diocese etc to the left */
   margin-bottom: 0;
   margin-left: 0;
   padding: 0;
   text-align: center;
 }
-#nav p#right {                                            /* similar but for right hand address text */
-  font-size: 1.0rem;
+#nav #right {                                            /* similar but for right hand address text */
   margin-bottom: 0;
   margin-right: 0;
   padding: 0;
@@ -296,7 +315,7 @@ elements */
 #top {                                                    /* navigation links at top of each page */
   color: #fff;
   font-size: 1.75rem;
-  text-align: center;
+  text-align: right;
   width: 100%;                                            /* helps with centring navigation */
 }
 #top img {
@@ -410,25 +429,30 @@ elements */
     visibility: visible;                                     /* Shows on larger than mobile sizes */
   }
 
+  #nav a:link {
+    border-right: #fff solid 1px;                           /* adds the dividing line to the right of each nav link */
+  }
+
   #nav ul li {
-    display: inline-block;                                /* wraps with viewport size */
+    display: inline-block;                                  /* wraps with viewport size */
     font-size: 1.5rem;
-    margin-right: 20px;                                   /* spacing for list items when horizontal */
+    margin-right: 20px;                                     /* spacing for list items when horizontal */
     text-align:left;
     *display:inline;/* IE7 */
     *zoom:1;
 
   }
-  #nav p#left {                                             /* aligns nav text for diocese etc to the left and sizes
+  #nav p {
+    font-size: 1.2rem;
+  }
+  #nav #left {                                             /* aligns nav text for diocese etc to the left and sizes
                                                             down so it doesn't wrap too much on max res */
-    font-size: 1.5rem;
     margin-bottom: 0;
     margin-left: 20px;
     padding: 0;
     text-align: left;
   }
-  #nav p#right {                                            /* similar but for right hand address text */
-    font-size: 1.5rem;
+  #nav #right {                                            /* similar but for right hand address text */
     margin-bottom: 0;
     margin-right: 20px;
     padding: 0;
@@ -509,5 +533,10 @@ elements */
   }
   #nav ul {
     margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #nav p {
+    font-size: 1.5rem;
   }
 }
