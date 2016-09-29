@@ -1,0 +1,104 @@
+<!--$page-title Photo Gallery &mdash; St. Andrew's-->
+<!--$description Photos from over the years at St. Andrew's Church, Ferring!-->
+<!--$dir ../../-->
+<!--$jquery <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+-->
+<!--$keywords 1250, advent, christmas, event, harvest, photos, picnic, sunday-->
+<!--$sidebarscript <script>
+    // Script to make content and sidebar same height no matter what!
+    // placing objects inside variables
+
+    //#added the below if statement to make sure this doesn't run on mobile
+
+    if ($(window).width() > 550){
+      var content = $('#contentBox');
+      var sidebar = $('#sidebarBox');
+      var count = 0;
+      var myTimer;
+
+      function setEqualContainer() {
+        // get content and sidebar height in variables
+        var getContentHeight = content.outerHeight();
+        var getSidebarHeight = sidebar.outerHeight();
+
+        // check if content height is bigger than sidebar
+        if ( getContentHeight > getSidebarHeight ) {
+          sidebar.css('min-height', getContentHeight);
+        }
+
+        // check if sidebar height is bigger than content
+        if ( getSidebarHeight > getContentHeight ) {
+          content.css('min-height', getSidebarHeight);
+        }
+      }
+
+      // creating the timer which will run every 500 milliseconds
+      // and will stop after the container will be loaded
+      // ...or after 15 seconds to not eat a lot of memory
+      myTimer = setInterval( function() {
+        count++;
+
+        if ( $('.testContainer').length == 0 ) {
+          setEqualContainer();
+        } else {
+          setEqualContainer();
+          clearInterval(myTimer);
+        }
+
+        if ( count == 15) {
+          clearInterval(myTimer);
+        }
+      }, 500);
+    }
+  </script>
+-->
+<!--$tablescript nil-->
+<!--$unitegallery <link rel='stylesheet' href='../unitegallery/css/unite-gallery.css' type='text/css' />
+
+  <script type='text/javascript' src='../unitegallery/js/unitegallery.min.js'></script>
+  <script type='text/javascript' src='../unitegallery/themes/tilesgrid/ug-theme-tilesgrid.js'></script>
+
+  <script type="text/javascript">
+      jQuery(document).ready(function(){
+        jQuery("#gallery").unitegallery({
+          theme_navigation_type: "arrows",
+        });
+      });
+  </script>
+-->
+
+<!--@import opening-->
+
+    <!--Row begins--><div class="row">
+
+      <!--Side navigation/info begin #side--><div class="four columns" id="sidebarBox">
+
+        <h3 class="list-title">Albums</h3>
+
+        <ul id="sidebarLinks">
+          <li><a href="../general">General</a></li>
+          <li><a href="../2016salisbury">Salisbury 2016</a></li>
+          <li><a href="../2015christmas">Christmas 2015</a></li>
+          <li><a href="../2015picnic">Picnic 2015</a></li>
+          <li><a href="../2015ferring1250">Ferring 1250</a></li>
+          <li><a href="../2014ww1">WW1 Service 2014</a></li>
+          <li><a href="../2014christmas">Christmas 2014</a></li>
+          <li><a href="../2014harvest">Harvest 2014</a></li>
+          <li><a href="../2014easter">Easter 2014</a></li>
+          <li><a href="../2013easter">Easter 2013</a></li>
+          <li><a href="../2012advent">Advent 2012</a></li>
+          <li><a href="../2012animals">Animal Service 2012</a></li>
+          <li><a href="../2012flowers">Flower Festival 2012</a></li>
+          <li><a href="../2011vicar">Installation as Vicar 2011</a></li>
+          <li><a href="../2011entertain">Entertainment 2011</a></li>
+          <li><a href="../2010christmas">Christmas Fair 2010</a></li>
+          <li><a href="../2010harvest">Harvest 2010</a></li>
+          <li><a href="../2010palm">Palm Sunday 2010</a></li>
+        </ul>
+      </div><!--Side navigation/info ends-->
+
+      <!--Content begins #content--><div class="eight columns nomargin" id="contentBox">
+
+        <h1 class="title">St. Andrew's Photo Gallery</h1>
+
+        <p style="text-align: center;">Please select an album on the left to be taken to it.</p>
