@@ -101,6 +101,69 @@
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
+	"\/photos-2012advent.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2012advent.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2012advent\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2012animals.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2012animals.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2012animals\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2013easter.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2013easter.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/photos-2013easter.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2013easter.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2013easter\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2014christmas.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2014christmas.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2014christmas\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2014easter.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2014easter.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2014easter\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2014harvest.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2014harvest.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2014harvest\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
 	"\/photos-2014ww1.kit": {
 		"fileType": 2048,
 		"ignore": 0,
