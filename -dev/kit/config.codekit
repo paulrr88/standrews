@@ -74,6 +74,42 @@
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
+	"\/contacts-bookings.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contacts-bookings.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/contacts\/form-bookings\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/contacts-secretary.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contacts-secretary.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/contacts\/form-secretary\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/contacts-wardens.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contacts-wardens.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/contacts\/form-warden\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/contacts-webmaster.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contacts-webmaster.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/contacts\/form-webmaster\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
 	"\/contacts.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -173,15 +209,6 @@
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
-	"\/photos-2013easter.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/photos-2013easter.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/photos-2013easter.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -253,15 +280,6 @@
 		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2015picnic\/index.html",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
-		},
-	"\/photos-2016harvest.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/photos-2016harvest.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/photos-2016harvest.kit": {
 		"fileType": 2048,

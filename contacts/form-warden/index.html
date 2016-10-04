@@ -1,56 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <!--
-
-  ##TAG INDEX FOR ROGER##
-
-  - #cofe - CofE news box JavaScript insert
-  - #content - content! Text etc on pages.
-  - #footer - info at foot of website, includes current year etc.
-  - #nav - links at top to pages
-  - #side - sidebar for info on home page, extra links on other pages etc
-
-  -->
-
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>St. Andrew's Church Ferring - Enquiry to the Churchwardens</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Enquiry to the Churchwardens &mdash; St. Andrew's Church, Ferring</title>
+  <meta name="description" content="Contact form for the St. Andrew's Church Churchwardens">
+  <meta name="keywords" content="andrew, anglican, church, coast, england, ferring, parish, saint, south, st, sussex, west, worthing, village, booking, form, contact, email">
+  <meta name="author" content="St. Andrew's Church, Ferring">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
+  <!-- CSS & JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../../css/normalize.css"><!-- reset file do not change -->
   <link rel="stylesheet" href="../../css/skeleton.css"><!-- framework CSS -->
   <link rel="stylesheet" href="../../css/style.css"><!--my additions-->
 
-  <!-- JavaScript
-  __________________________________________________ -->
-
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
+  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!--Container for ALL content, everything inside this--><div class="container">
 
+    <!--Row begins--><div class="row">
 
+      <!--Start of top information area--><div class="twelve columns" id="top">
+        <ul class="nostyle">
+          <li><a href="../../sitemap">Sitemap</a></li>
+          <li><a href="../../docs/AEDnotice.pdf"><img src="../../images/aed.jpg" /></a></li>
+        </ul>
+      </div><!--End of top information area-->
+
+    </div><!--Row ends-->
+
+
+    <!--Row begins--><div class="row">
+
+      <!--Header begin--><div class="twelve columns" id="header">
+
+        <div class="twelve columns">
+          <h1 id="header-title">St. Andrew's Church</h1>
+        </div>
+
+      </div><!--Header ends-->
+
+    </div><!--Row ends-->
+
+
+    <!--Row begins--><div id="row">
+
+      <!--Navigation area begins--><div class="twelve columns" id="nav">
+        <!--Taglines at bottom of header--><div class="seven columns">
+          <p id="left">In the Anglican Diocese of Chichester, and Worthing Deanery</p>
+        </div>
+        <div class="five columns">
+          <p id="right">Church Lane, Ferring, West Sussex, BN12 5HN</p>
+        </div>
+        <!--Navigation links begin #nav--><div class="centre">
+          <ul>
+            <li><a href="../../">Home</a></li><li><a href="../../contacts">Contacts</a></li><li><a href="../../about">About Us</a></li><li><a href="../../services">Services &amp; Dates</a></li><li><a href="../../clubs">Clubs/Activities</a></li><li><a href="../../photos">Photos</a></li><li><a href="../../stewardship">Stewardship</a></li><li><a href="../../links">Links</a></li>
+          </ul>
+        </div><!--Navigation links end-->
+      </div><!--Navigation area ends-->
+
+    </div><!--Row ends-->
 
     <!--Row begins--><div class="row">
 
@@ -62,17 +88,21 @@
 
       <h2 class="title">Enquiry to the Churchwardens</h2>
 
-      <form action="../contact.php" method="Post">
-        <label>Your email address:</label>
-        <input type="text" name="email" size="25">
-        <label>Your name:</label>
-        <input type="text" size="25" name="realname">
-        <label>Your enquiry:</label>
-        <textarea name="Your enquiry" cols="50" rows="6" id="Message"></textarea>
-        <br />
-        <input type="submit" name="Submit" value="Submit">
-        <input type="reset" name="Reset" value="Reset">
-      </form>
+      <div id="formcontainer">
+
+        <form action="../contact.php" method="Post">
+          <label>Your email address:</label>
+          <input type="text" name="email" size="25">
+          <label>Your name:</label>
+          <input type="text" size="25" name="realname">
+          <label>Your enquiry:</label>
+          <textarea name="Your enquiry" cols="50" rows="6" id="Message"></textarea>
+          <br />
+          <input type="submit" name="Submit" value="Submit">
+          <input type="reset" name="Reset" value="Reset">
+        </form>
+
+      </div>
 
       <p><a href="../">&lt;&lt; Back</a></p>
 
@@ -80,10 +110,40 @@
 
     </div><!--Row ends-->
 
+    <!--Row begins--><div class="row">
+
+      <!--Footer begins #footer--><div class="twelve columns" id="footer">
+        <p><strong>&copy; 2016 St. Andrew's Church, Ferring | Designed by Paul Robinson</strong></p>
+        <a href="http://www.facebook.com/standrewsferring"><img src="../../images/facebook.png" alt="St. Andrew's Church Ferring Facebook" /></a>
+
+        <a href=""><img src="../../images/diocese.png" /></a>
+
+        <br />
+
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../contacts">Contacts</a></li>
+          <li><a href="../../about">Who's Who</a></li>
+          <li><a href="https://goo.gl/maps/NSJ76SqrDo32">Where to find St. Andrew's</a></li>
+          <li><a href="../../about/history">History</a></li>
+          <li><a href="../../services">Services &amp; Dates</a></li>
+          <li><a href="../../clubs">Clubs &amp; Activities</a></li>
+          <li><a href="../../clubs/#social">Social Life at St. Andrew's</a></li>
+          <li><a href="../../clubs/#transport">Church Transport</a></li>
+          <li><a href="../../photos">Photo Gallery</a></li>
+          <li><a href="../../stewardship">Stewardship</a></li>
+          <li><a href="../../links">Links</a></li>
+        </ul>
+
+      </div><!--Footer ends-->
+
+    </div><!--Row ends-->
 
   </div><!--Container ends-->
 
+  
+  
 <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

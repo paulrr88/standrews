@@ -211,6 +211,11 @@ elements */
   margin-right: 0;
 }
 
+#formcontainer {                                          /* container for the contact forms to centre them */
+  width: 300px;
+  margin: 0 auto;
+}
+
 #header {                                                 /* header image background etc - set for mobile,
                                                           overridden by breakpoints below*/
   background: url(../images/header.jpg) no-repeat center;
@@ -228,6 +233,11 @@ elements */
   padding: 0;
   text-align: center;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+#Message {                                                /* Contact form text area size */
+  height: 400px;
+  width: 275px;
 }
 
 #nav {                                                    /* navigation links at top of each page */
