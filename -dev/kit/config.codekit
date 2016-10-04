@@ -101,6 +101,51 @@
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
+	"\/photos-2010christmas.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2010christmas.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2010christmas\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2010harvest.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2010harvest.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2010harvest\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2010palm.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2010palm.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2010palm\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2011entertain.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2011entertain.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2011entertain\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2011vicar.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2011vicar.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2011vicar\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
 	"\/photos-2012advent.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -116,6 +161,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/photos-2012animals.kit",
 		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2012animals\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2012flowers.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2012flowers.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2012flowers\/index.html",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
@@ -197,6 +251,24 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/photos-2015picnic.kit",
 		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2015picnic\/index.html",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
+	"\/photos-2016harvest.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2016harvest.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/photos-2016harvest.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/photos-2016harvest.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/standrews\/photos\/2016harvest\/index.html",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
